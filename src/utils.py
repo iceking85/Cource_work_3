@@ -6,3 +6,10 @@ def get_all_operations():
     with open('operations.json', 'r', encoding='utf-8') as file:
         data = json.load(file)
     return(data)
+
+def filtered_operations():
+    '''Функция фильтрует словари от пустого'''
+    list_of_dicts = get_all_operations()
+    filtered_list = list(filter(lambda x: x, list_of_dicts))
+    return filtered_list
+

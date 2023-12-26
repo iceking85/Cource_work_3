@@ -33,4 +33,10 @@ def sorted_date():
         result.append(i)
     return result
 
+def first_five_operations():
+    '''Получаем первые 5 словарей'''
+    sorted_date_dict = sorted_date()
+    first_five_dicts = sorted_date_dict[:5]
+    return first_five_dicts
+
 

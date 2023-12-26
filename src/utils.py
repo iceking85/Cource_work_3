@@ -1,3 +1,4 @@
+from config import DATA_DIR
 import json
 
 def get_data():

@@ -24,3 +24,13 @@ def sorted_executed():
             continue
     return executed_list
 
+def sorted_date():
+    '''Сортировка по датам'''
+    sorted_dict = sorted_executed()
+    sorted_data = sorted(sorted_dict, key=lambda x: x['date'], reverse=True)
+    result = []
+    for i in sorted_data:
+        result.append(i)
+    return result
+
+

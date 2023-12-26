@@ -13,3 +13,14 @@ def filtered_operations():
     filtered_list = list(filter(lambda x: x, list_of_dicts))
     return filtered_list
 
+def sorted_executed():
+    '''сортируем по операциям (EXECUTED)'''
+    executed_list = []
+    filter_list = filtered_operations()
+    for i in filter_list:
+        if i['state'] == "EXECUTED":
+            executed_list.append(i)
+        else:
+            continue
+    return executed_list
+

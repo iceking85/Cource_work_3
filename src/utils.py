@@ -1,10 +1,8 @@
-from config import DATA_DIR
+from config import OPERATIONS_FILE
 import json
 
-def get_data():
-    '''Функция извлекает данные из файла operation.json и возвращает их'''
-    with open(DATA_DIR, 'r') as file:
-        json_data = file.read()
-
-    data = json.loads(json_data)
-    return data
+def get_all_operations():
+    '''Функция извлекает данные из файла operations.json и возвращает их'''
+    with open('operations.json', 'r', encoding='utf-8') as file:
+        data = json.load(file)
+    return(data)

@@ -1,4 +1,3 @@
-from config import OPERATIONS_FILE
 import json
 
 def get_all_operations():
